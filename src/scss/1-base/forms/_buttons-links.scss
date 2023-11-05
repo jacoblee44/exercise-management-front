@@ -1,0 +1,202 @@
+/* BUTTONS */
+
+button {
+  background: none;
+  border: none;
+  border-box: none;
+}
+
+.button {
+  position: relative;
+  min-width: 176px;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: $link;
+  padding: 8px 32px;
+  display: inline-block;
+  z-index: 0;
+  border-radius: 20px;
+  border: 2px solid $link;
+  box-shadow: 0 2px 15px 0 rgba(98, 149, 255, 0.2);
+  &--wico {
+    min-width: unset;
+  }
+  &.green {
+    color: $green;
+    border: 2px solid $green;
+    &:before {
+      background: $green;
+    }
+  }
+
+  &.disabled {
+    color: $dark-gray;
+    border: 2px solid $dark-gray;
+    &:before {
+      background: none;
+    }
+    svg {
+      fill: $dark-gray;
+    }
+    &:hover {
+      color: $dark-gray;
+      .button__icon {
+        fill: $dark-gray;
+      }
+    }
+  }
+
+  svg {
+    margin-top: -3px;
+    margin-left: 10px;
+    .button__icon-blue {
+      fill: $link;
+    }
+    .button__icon-green {
+      fill: $green;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 40px;
+    border-radius: 20px;
+    top: -1px;
+    left: -10%;
+    z-index: -1;
+    background: $link;
+    -moz-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  &:hover {
+    .button__icon {
+      fill: white;
+    }
+    &:before {
+      width: 120%;
+    }
+    color: white;
+    text-decoration: none;
+  }
+
+  // &:active,
+  // &:focus {
+  //   .button__icon {
+  //     fill: white;
+  //   }
+  //   &:before {
+  //     width: 120%;
+  //   }
+  //   color: white;
+  //   text-decoration: none;
+  // }
+
+  &-ic-bg {
+    padding: 8px 32px 8px 0;
+    &::before {
+      left: 0;
+      width: 40px;
+    }
+    svg {
+      margin-top: -3px;
+      margin-left: 10px;
+      margin-right: 20px;
+      .button__icon {
+        fill: white;
+      }
+    }
+  }
+  // &:not([href]):not([tabindex]) {
+  //   &.green {
+  //     color: $green;
+  //   }
+  //   &.disabled {
+  //     color: $dark-gray;
+  //     border: 2px solid $dark-gray;
+  //     &:before {
+  //       background: none;
+  //     }
+  //     svg {
+  //       fill: $dark-gray;
+  //     }
+  //     &:hover {
+  //       color: $dark-gray;
+  //       .button__icon {
+  //         fill: $dark-gray;
+  //       }
+  //     }
+  //   }
+  //   &:hover {
+  //     .button__icon {
+  //       fill: white;
+  //     }
+  //     &:before {
+  //       width: 120%;
+  //     }
+  //     color: white;
+  //     text-decoration: none;
+  //   }
+
+  //   &:active,
+  //   &:focus {
+  //     .button__icon {
+  //       fill: white;
+  //     }
+  //     &:before {
+  //       width: 120%;
+  //     }
+  //     color: white;
+  //     text-decoration: none;
+  //   }
+  // }
+}
+
+/* LINKS */
+
+a,
+a:not([href]):not([tabindex]) {
+  color: $link;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $link-active;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover,
+  &:active {
+    outline: none;
+  }
+}
+
+.dropdown-menu {
+  background: $vsBackground;
+  .dropdown-item {
+    padding: 15px 30px;
+  }
+  .dropdown-item:hover {
+    background: $link;
+    color: white;
+  }
+  .dropdown-item:active {
+    background: $link;
+  }
+}
+
+.closeX {
+  cursor: pointer;
+  svg {
+    fill: $link;
+  }
+}

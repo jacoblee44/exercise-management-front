@@ -1,0 +1,103 @@
+.product-list-wrapper {
+    margin-top: 40px;
+    .product-list-header {
+        background: #626973;
+        padding: 15px 0;
+        margin:0;
+        h4 {
+            color: white;
+            font-size: 18px;
+            margin: 0;
+            line-height: 1;
+            @media only screen and (max-width: 567px) {
+                font-size: 16px;
+            }
+        }
+    }
+    .products-list {
+        .products{
+           list-style: none;
+           margin: 0;
+            .product {
+                border-bottom: 1px solid rgba(71, 73, 77, 0.15);
+                &:hover {
+                    box-shadow: 1px 7px 14px -10px rgba(0, 0, 0, 0.3);
+                }
+                &.collapsed {
+                    box-shadow: 1px 7px 14px -10px rgba(0, 0, 0, 0.3);
+                }
+                .header {
+                    margin: 0;
+                    position: relative;
+                    padding: 15px 0;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    h4 {
+                        font-size: 22px;
+                        margin: 0;
+                        font-weight: bold;
+                        @media only screen and (max-width: 567px) {
+                            font-size: 16px;
+                        }
+                    }
+                    .type-of-energy, .type-of-heat {
+                        h4 {
+                            font-size: 18px;
+                        }
+                    }
+                    .type-of-heat{
+                        &:before {
+                            font-family: 'Material Icons';
+                            content: "keyboard_arrow_up";
+                            -webkit-font-feature-settings: 'liga';
+                            position: absolute;
+                            right: 0;
+                            padding: 0 15px;
+                            font-size: 24px;
+                            line-height: 1;       
+                        }
+                    }
+                    &.collapsed {
+                        box-shadow: none;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        h4 { 
+                                font-weight: normal;
+                        }
+                        .type-of-heat{
+                            &:before {
+                                    font-family: 'Material Icons';
+                                    content: "keyboard_arrow_down";
+                                    -webkit-font-feature-settings: 'liga';
+                                    position: absolute;
+                                    right: 0;
+                                    padding: 0 15px;
+                                    font-size: 24px;
+                                    line-height: 1;       
+                            }
+                        }
+                    }
+                }
+                .product-specification{
+                    margin-top: 20px;
+                    .product-img{
+                        img{
+                            max-width: 100%;
+                            max-height: 250px;
+                        }
+                    }
+                    .parameter{
+                        &:first-child{
+                            border-top: none;
+                        }
+                        &:last-child{
+                            border-bottom: none;
+                        }
+                    }
+                }
+           }
+        }
+    }
+}

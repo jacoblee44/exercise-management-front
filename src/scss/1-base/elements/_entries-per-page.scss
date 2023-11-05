@@ -1,0 +1,21 @@
+.entries__pp {
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        .name {
+            margin-right: 10px;
+            color: $link;
+        }
+        .form-control {
+            width: 60px;
+        }
+    }
+}
+
+.total__entries {
+    span {
+        color: $link;
+        font-weight: bold;
+    }
+}

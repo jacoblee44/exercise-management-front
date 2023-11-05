@@ -1,0 +1,132 @@
+.data-table {
+	border: 1px solid $light-border;
+	border-radius: 15px;
+	overflow: auto;
+	table {
+		width: 100%;
+		border-radius: 15px;
+		overflow: hidden;
+		th {
+			border: 1px solid $light-border;
+			border-top: none;
+			font-size: 14px;
+			height: 48px;
+			padding: 0 30px;
+		}
+		th:first-child {
+			border-left: none;
+			width: 170px;
+			text-align: center;
+		}
+		th:last-child {
+			border-right: none;
+			width: 180px;
+			text-align: center;
+		}
+		tr:last-child {
+			td {
+				border-bottom: none;
+			}
+		}
+		td {
+			border: 1px solid $light-border;
+			font-size: 14px;
+			height: 32px;
+			padding: 0 30px;
+			input {
+				height: 32px;
+				padding: 0;
+				border: none;
+				background: none;
+			}
+		}
+		td:first-child {
+			border-left: none;
+			width: 170px;
+			text-align: center;
+		}
+		td:last-child {
+			border-right: none;
+			width: 170px;
+			text-align: center;
+		}
+	}
+	&--values {
+		table {
+			th {
+				height: 32px;
+				width: auto;
+				text-align: center;
+			}
+			th:first-child {
+				border-left: none;
+				width: 32px;
+				text-align: center;
+			}
+			th:last-child {
+				border-right: none;
+				width: 32px;
+				text-align: center;
+			}
+			td {
+				text-align: center;
+				width: 32px;
+				padding: 0;
+				input {
+					text-align: center;
+				}
+			}
+			td:first-child {
+				border-left: none;
+				width: 32px;
+				font-weight: 600;
+			}
+			td:last-child {
+				border-right: none;
+				width: 32px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+
+.answer-matrix {
+	overflow: auto;
+	.table-header-rotated {
+		border-collapse: collapse;
+		font-size: 12px;
+		table-layout: auto;
+		th {
+		  border: 1px solid $light-border;
+		}
+		td {
+		  	text-align: center;
+			padding: 0;
+			vertical-align: middle;
+		  	border: 1px solid $light-border;
+		}
+		th.rotate {
+			padding: 10px 0;
+		  > div {
+			  width: 48px;
+			  height: 120px;
+			  display: flex;
+			  span {
+				writing-mode: vertical-rl;
+				text-orientation: mixed;
+				transform: rotate(-180deg);
+				margin: 0 auto;
+			  }
+		  }
+		}
+		th.row-header {
+			vertical-align: middle;
+			height: 48px;
+			border-bottom: 1px solid $light-border;
+			width: 100%;
+			min-width: 140px;
+		}
+	}
+}

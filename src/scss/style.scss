@@ -1,0 +1,17 @@
+/*!
+Theme Name: Furniture Feed
+Theme URI: http://furniturefeed.lt/
+Author: Saulius Sutkus
+Author URI: http://designpartisans.com
+Version: 1.0.0
+Text Domain: Furniture Feed
+*/
+
+@import "variables";
+@import "mixins";
+@import "1-base/base";
+@import "2-layouts/layouts";
+@import "3-modules/modules";
+@import "custom.scss";
+@import "datatable_search.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin-ext");

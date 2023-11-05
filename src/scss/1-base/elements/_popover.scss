@@ -1,0 +1,10 @@
+.popover {
+    border: none;
+    .arrow {
+        display: none;
+    }
+    .popover-body {
+        background: $link;
+        color: white;
+    }
+}

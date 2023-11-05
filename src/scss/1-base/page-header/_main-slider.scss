@@ -1,0 +1,30 @@
+.main-slider{
+    height: 340px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 20px 44px;
+    @media only screen and (max-width: 992px) {
+        height: auto;
+    }
+    &.home-cover{
+        min-height: 340px;
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &.no-favimg{
+        height: auto;
+        background: #c7c7c7;
+        background: -moz-linear-gradient(left, #c7c7c7 0%, #ffffff 50%, #c7c7c7 100%);
+        background: -webkit-linear-gradient(left, #c7c7c7 0%,#ffffff 50%,#c7c7c7 100%);
+        background: linear-gradient(to right, #c7c7c7 0%,#ffffff 50%,#c7c7c7 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c7c7', endColorstr='#c7c7c7',GradientType=1 );
+        h1{
+          margin: 0 auto;
+          color: #3a3a3a;
+          background: none;
+        }
+    }
+}

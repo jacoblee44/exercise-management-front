@@ -1,0 +1,20 @@
+.notification {
+    padding: 15px;
+    .notification-content {
+        margin-bottom: 0;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+.indicator {
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    display: inline-block;
+    margin-right: 8px;
+    &--red{
+        background: rgba(208,2,27,0.4);
+    }
+}

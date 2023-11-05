@@ -1,0 +1,81 @@
+/* TYPOGRAPHY */
+
+h1,h2,h3,h4 {
+  font-family: $font__headings;
+  color: $black;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 36px;
+  @media only screen and (max-width: 850px) {
+    font-size: 32px;
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 28px;
+  }
+}
+
+.page-title{
+  background: rgba(134, 136, 137, 0.8);
+  padding: 5px 10px;
+  color: white;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;  
+}
+
+h5 {
+ font-size: 14px;
+ font-weight: 600;  
+}
+
+
+
+
+.tr-upp{
+  text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  h2{
+    font-size: 26px;
+
+  }
+
+  h3{
+    font-size: 21px;
+  }
+
+  h4{
+    font-size: 18px;
+  }
+
+  h5{
+    font-size: 16px;
+  }
+
+  .g-recaptcha {
+       width:100%;
+      transform:scale(0.88);
+      -webkit-transform:scale(0.88);
+      transform-origin:0 0;
+      -webkit-transform-origin:0 0;
+  }
+
+
+}

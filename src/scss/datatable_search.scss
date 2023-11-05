@@ -1,0 +1,7 @@
+.datatable_filter label {
+  input {
+    &:focus ~ .search {
+      background: blue;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.modal-backdrop {
+  background: #25283d;
+  &.show {
+    opacity: 0.8;
+  }
+}
+
+.modal {
+  .modal-dialog {
+    max-width: 768px;
+    &-mini {
+      max-width: 480px;
+    }
+    &-fwh {
+      max-width: 100%;
+      padding: 50px;
+      .modal-content {
+        height: 90vh;
+        .minimize {
+          position: absolute;
+          top: 40px;
+          right: 40px;
+        }
+      }
+    }
+    .modal-content {
+      background: #f7f9ff;
+      border-radius: 15px;
+      .closeX {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+      .modal-header {
+        border-bottom: none;
+        input {
+          font-size: 24px;
+          color: #4963fe;
+          background: #f7f9ff;
+          border: none;
+          border-bottom: 2px solid rgba(73, 99, 254, 0.1);
+          &:focus {
+            color: #4963fe;
+          }
+          &::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: #4963fe;
+          }
+
+          &:-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            color: #4963fe;
+            opacity: 1;
+          }
+
+          &::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: #4963fe;
+            opacity: 1;
+          }
+
+          &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #4a4a4a;
+          }
+
+          &:focus::-webkit-input-placeholder {
+            opacity: 0;
+          }
+
+          &:focus:-moz-placeholder {
+            /* Mozilla Firefox 4 to 18 */
+            opacity: 0;
+          }
+
+          &:focus::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            opacity: 0;
+          }
+
+          &:focus:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            opacity: 0;
+          }
+        }
+      }
+      .activities {
+        list-style: none;
+        margin: 0;
+        li {
+          padding: 12px 0;
+        }
+      }
+      .min-importance {
+        position: relative;
+        svg {
+          position: absolute;
+          right: 0;
+        }
+      }
+      .modal-footer {
+        border-top: 0;
+      }
+    }
+  }
+}
+
+.cancel-submit {
+  display: block;
+}
+
+.final-answers {
+  display: block;
+  h2 {
+    font-weight: 600;
+    color: $link;
+  }
+  h3 {
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  p {
+    font-weight: 600;
+  }
+  .closeX {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+}

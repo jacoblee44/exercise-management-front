@@ -1,0 +1,39 @@
+.circle__wrapper {
+    .circle {
+        height: 180px;
+        width: 180px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 100%;
+        z-index: 2;
+        box-shadow: 0 0px 20px 0 rgba(87,87,87,0.4);
+        background: $link;
+        margin: 0 auto;
+        &__usage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 135px;
+            width: 135px;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            box-shadow: inset 0 0 10px rgba(87,87,87,0.4);
+            z-index: 3;
+            border-radius: 100%;
+            text-align: center;
+            &-text{
+                font-size: 42px;
+            }
+        }
+        &-green {
+            background: $green;
+        }
+        &-violet {
+            background: $violet; 
+        }
+    }
+    .analysis-managment-actions {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+} 

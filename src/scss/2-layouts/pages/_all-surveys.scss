@@ -1,0 +1,15 @@
+.all__surveys {
+    .survey_card-wrapper {
+        .survey_card {
+            display: flex;
+            align-items: center;
+            background-color: #FDFFFC;
+            box-shadow: 0 2px 15px 0 rgba(98, 149, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            .survey__name {
+                margin-right: auto;
+            }
+        }
+    }
+}

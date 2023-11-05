@@ -1,0 +1,14 @@
+.analysis-managment {
+    @media only screen and (min-width: 1921px) {
+        .card {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+    }
+    @media only screen and (max-width: 1300px) {
+        .card {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}

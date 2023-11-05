@@ -1,0 +1,40 @@
+.pagination {
+  .page-link {
+    border: none;
+    line-height: 0.6;
+    padding: 8px;
+    color: $black;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    &:hover{
+      color:  $link;
+      background: none;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      color: white;
+      background: $link;
+    }
+    &:active {
+      outline: none !important;
+      box-shadow: none;
+      color: white;
+      background: $link;
+    }
+    &.next,
+    &.previous {
+      background: none;
+      &:hover {
+        svg {
+          fill: $link;
+        }
+      }
+    }
+  }
+  &:first-child .page-link{
+    border-radius: 50%;
+  }
+}

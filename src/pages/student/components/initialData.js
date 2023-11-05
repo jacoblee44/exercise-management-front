@@ -1,0 +1,31 @@
+const initialData = {
+  "item-1": { id: "item-1", content: "garbage 1", color: "#F5A623" },
+  "item-2": { id: "item-2", content: "garbage 2", color: "#F8E71C" },
+  "item-3": { id: "item-3", content: "garbage 3", color: "#F5A623" },
+  "item-4": { id: "item-4", content: "garbage 4", color: "#CC2E7F" },
+  "item-5": { id: "item-5", content: "garbage 5", color: "#F5A623" },
+  "item-6": { id: "item-6", content: "garbage 6", color: "#CC2E7F" },
+  "item-7": { id: "item-7", content: "garbage 7", color: "#F8E71C" },
+  "item-8": { id: "item-8", content: "garbage 8", color: "#F5A623" },
+  "item-9": { id: "item-9", content: "garbage 9", color: "#CF52E9" },
+  "item-10": { id: "item-10", content: "garbage 10", color: "#CC2E7F" },
+  "item-11": { id: "item-11", content: "garbage 11", color: "#F5A623" },
+  "item-12": { id: "item-12", content: "garbage 12", color: "#F8E71C" },
+  "item-13": { id: "item-13", content: "garbage 13", color: "#CF52E9" },
+  "item-14": { id: "item-14", content: "garbage 14", color: "#F5A623" },
+  "item-15": { id: "item-15", content: "garbage 15", color: "#CC2E7F" },
+  "item-16": { id: "item-16", content: "garbage 16", color: "#CF52E9" },
+  "item-17": { id: "item-17", content: "garbage 17", color: "#CC2E7F" },
+  "item-18": { id: "item-18", content: "garbage 18", color: "#F8E71C" },
+  "item-19": { id: "item-19", content: "garbage 19", color: "#CC2E7F" },
+  "item-20": { id: "item-20", content: "garbage 20", color: "#F5A623" },
+  "item-21": { id: "item-21", content: "garbage 21", color: "#CC2E7F" },
+  "item-22": { id: "item-22", content: "garbage 22", color: "#F8E71C" },
+  "item-23": { id: "item-23", content: "garbage 23", color: "#CF52E9" },
+  "item-24": { id: "item-24", content: "garbage 24", color: "#F5A623" },
+  "item-25": { id: "item-25", content: "garbage 25", color: "#CC2E7F" },
+  "item-26": { id: "item-26", content: "garbage 26", color: "#F5A623" },
+  "item-27": { id: "item-27", content: "garbage 27", color: "#F8E71C" }
+};
+
+export default initialData;

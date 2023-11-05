@@ -1,0 +1,35 @@
+.group {
+  margin-bottom: 20px;
+  .group-content {
+    border-radius: 5px;
+    padding: 10px;
+    &.active {
+      border: 4px solid $link;
+      .group-header {
+        padding-bottom: 15px;
+      }
+      .cards-wrapper {
+        height: 305px;
+      }
+    }
+    .group-header {
+      padding: 2px 0;
+      position: relative;
+      p {
+        color: $link;
+        margin: 0;
+        text-align: center;
+        font-weight: 600;
+        svg {
+          fill: $link;
+          position: absolute;
+          right: 6px;
+        }
+      }
+    }
+    .cards-wrapper {
+      overflow-y: auto;
+      position: relative;
+    }
+  }
+}

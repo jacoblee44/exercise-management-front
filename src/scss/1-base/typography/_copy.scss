@@ -1,0 +1,29 @@
+p {
+	margin-bottom: 1rem;
+	line-height: 1.3;
+	color: $paragraph;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+.read-more {
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+}
+
+.helper-text {
+	font-size: 12px;
+}
+
+.link {
+	color: $link;
+}

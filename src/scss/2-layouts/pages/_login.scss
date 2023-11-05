@@ -1,0 +1,71 @@
+.login-container {
+  position: absolute;
+  background: #f7f9ff;
+  width: 100%;
+  padding: 60px 60px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  &--teacher {
+    max-width: 480px;
+    .fields {
+      // box-shadow: 0 2px 15px 0 rgba(98,149,255,0.2);
+      input[type="email"] {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      input[type="password"] {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+  &--student {
+    max-width: 870px;
+    .fields {
+      input,
+      select,
+      .dropdown {
+        box-shadow: 0 2px 15px 0 rgba(98, 149, 255, 0.2);
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      input[type="email"] {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      input[type="password"] {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+  .login-content {
+    width: 100%;
+    .logo {
+      height: 38px;
+      display: block;
+      margin: 0 auto 40px auto;
+    }
+  }
+  .login-form {
+    width: 100%;
+    .closeX {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+  }
+  #sign-up {
+    display: none;
+  }
+}
